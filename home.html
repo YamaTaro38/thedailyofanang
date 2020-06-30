@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rafiful Han | Web Developer</title>
+	<link rel="stylesheet" href="css/home.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div id="logo">
+				<h3>Rafiful Han</h3>
+			</div>
+			<ul>
+				<span class="close">X</span>
+				<menu>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="project.html">Project</a></li>
+				</menu>
+			</ul>
+
+			<span class="toggle"></span>
+		</nav>
+	</header>
+	
+	<div id="container">
+		<div id="intro">
+			<div class="box-decoration"></div>
+			<div id="photo-show">
+				<img src="img/classical-photo.jpg" alt="">
+			</div>
+			<div id="intro-text">
+				<h1><span>c</span>
+					<span>r</span>
+					<span>e</span>
+					<span>a</span>
+					<span>t</span>
+					<span>i</span>
+					<span>v</span>
+					<span>e</span>
+				</h1>
+				<h3>Developer</h3>
+				<h3>Sensible To FrontEnd</h3>
+			</div>
+		</div>
+
+		<div id="about">
+			<h1>SKILLS</h1>
+				<section class="skills">
+					<div class="box-parent">
+						<div class="box-percent">
+							<div class="percent">
+								UI/UX
+							</div>
+						</div>
+						<div class="box-list">
+							<ul>
+								<li>Interface Design</li>
+								<li>Graphics</li>
+								<li>Visual Design</li>
+								<li>Iconography</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-parent">
+						<div class="box-percent">
+							<div class="percent">
+								FrontEnd
+							</div>
+						</div>
+						<div class="box-list">
+							<ul>
+								<li>HTML5</li>
+								<li>CSS3</li>
+								<li>JavaScript</li>
+								<li>Jquery</li>
+								<li>Bootstrap</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="box-parent">
+						<div class="box-percent">
+							<div class="percent">
+								BackEnd
+							</div>
+						</div>
+						<div class="box-list">
+							<ul>
+								<li>PHP</li>
+								<li>SQL</li>
+								<li>Laravel</li>
+								<li>Codeigniter</li>
+								<li>Node Js</li>
+								<li>Vue Js</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div id="family">
+			<h1>My Family</h1>
+			<div id="myfamily">
+				<div class="card card1">
+					<!-- <img src="./img/father.jpeg" alt=""> -->
+					<h3>M Mujiono (FATHER)</h3>
+				</div>
+
+				<div class="card card2">
+					<!-- <img src="./img/mother.jpeg" alt=""> -->
+					<h3>Mulyaning Rahayu (MOTHER)</h3>
+				</div>
+
+				<div class="card card3">
+					<!-- <img src="./img/setan.jpeg" alt=""> -->
+					<h3>M Durrun Nafis (BROTHER)</h3>
+				</div>
+
+				<div class="card card4">
+					<!-- <img src="./img/sister.jpeg" alt=""> -->
+					<h3>Nadia Salsabila (SISTER)</h3>
+				</div>
+			</div>
+		</div>
+
+		<div id="contact">
+			<h1>CONTACT</h1>
+			<form action="">
+				<label for="name">Name</label>
+				<input type="username" id="name">
+				<label for="email">Email</label>
+				<input type="email" id="email">
+				<label for="message">Message</label>
+				<textarea name="message" id="message" cols="30" rows="10"></textarea>
+				<button>Send</button>
+			</form>
+		</div>
+
+<script>
+
+	const intro = document.getElementById('intro');
+	const percent = document.querySelectorAll('#about .percent');
+	const toggleNav = document.querySelector('nav .toggle');
+	const ul = document.querySelector('nav ul');
+	const close = document.querySelector('nav .close');
+
+	document.body.onload = function(){
+		intro.classList.add('toRight');
+
+		setTimeout(function(){
+			container.classList.remove('toRight');
+		}, 1500);
+	};
+
+	let x = 0;
+
+	document.body.onscroll = function(){
+		x++;
+
+		if ( x == 16 ) {
+			percent.forEach( function(per) {
+				per.classList.add('percentLength');
+			});
+		}
+
+		console.log(x)
+	};
+
+	toggleNav.onclick = function(){
+		ul.classList.toggle('showSideNav');
+		document.body.style.overflow = 'hidden';
+	};
+
+	close.onclick = function(){
+		ul.classList.toggle('showSideNav');
+		setTimeout(function(){
+			document.body.style.overflowY = 'auto';
+		}, 800)
+	};
+
+</script>
+</body>
+</html>
