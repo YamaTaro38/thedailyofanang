@@ -13,6 +13,10 @@ body{
 	font-family: 'Comfortaa', cursive;
 	background: #1f1f1f;
 	overflow-x: hidden;
+	-moz-overflow-x: hidden;
+	-webkit-overflow-x: hidden;
+	-o-overflow-x: hidden;
+	-ms-overflow-x: hidden;
 }
 
 header{
