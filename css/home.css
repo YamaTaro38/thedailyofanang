@@ -420,10 +420,17 @@ nav .close{
 	#intro-text h3:nth-child(3){
 		font-size: 18pt;
 	}
-
+	
+	#myfamily{
+		flex-direction: column;
+	}
 }
 
 @media screen and (max-width: 780px){
+	#intro{
+		left: 5%;
+	}
+	
 	#intro .box-decoration{
 		left: 40px;
 		top: 40px;
