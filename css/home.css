@@ -430,11 +430,7 @@ nav .close{
 	}
 }
 
-@media screen and (max-width: 780px){
-	#intro{
-		left: 12%;
-	}
-	
+@media screen and (max-width: 780px){	
 	#intro .box-decoration{
 		left: 40px;
 		top: 40px;
