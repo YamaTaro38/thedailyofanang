@@ -200,7 +200,7 @@ nav .close{
 	background: #000;
 }
 
-#about h1, #contact h1{
+#about h1, #contact h1, .responsive-google-slides h1{
 	font-size: 28pt;
 	text-align: center;
 }
@@ -328,6 +328,25 @@ nav .close{
 	box-shadow: 0 -5px 15px rgba(0,0,0,0.5);
 	background-color: #0f0f0f;
 }
+
+  .responsive-google-slides {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Ratio */
+    height: 0;
+    overflow: hidden;
+  }
+
+  .responsive-google-slides iframe {
+    border: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+	transform: translate(-50%, -50%);
+    width: 100% !important;
+	max-width: 1000px;
+	max-height: 600px;
+    height: 100% !important;
+  }
 
 @keyframes percentLength{
 	0%{
