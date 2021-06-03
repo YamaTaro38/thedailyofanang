@@ -200,7 +200,7 @@ nav .close{
 	background: #000;
 }
 
-#about h1, #contact h1, .responsive-google-slides h1{
+#about h1, #contact h1, h1{
 	font-size: 28pt;
 	text-align: center;
 }
@@ -334,7 +334,7 @@ nav .close{
     padding-bottom: 56.25%; /* 16:9 Ratio */
     height: 0;
     overflow: hidden;
-	margin-bottom: 5rem;
+	margin-bottom: 50px;
   }
 
   .responsive-google-slides iframe {
